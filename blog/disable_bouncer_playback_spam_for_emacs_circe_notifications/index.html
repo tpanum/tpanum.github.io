@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Thomas Kobber Panum</title>
+  
+  
+  <meta name="author" content="Thomas Kobber Panum">
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=.5">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<div class="headerbck"></div>
+	<div id="grid"><header>
+    <a href="https://panum.dk/">
+	<picture>
+	    
+	    <source  type="image/webp" srcset="/img/me_x1.webp 1x, /img/me_x2.webp 2x">
+	    
+	    <source  type="image/png" srcset="/img/me_x1.png 1x, /img/me_x2.png 2x">
+	    
+	    
+	    <img src="https://panum.dk/img/me_x1.png" alt="Thomas Kobber Panum">
+	    
+	</picture>
+	<h2>Thomas Kobber Panum</h2>
+    </a>
+    <nav>
+	<ul>
+	    
+	    
+	    
+	    
+
+	    
+	    
+	    
+
+	    <li><a href="/publications/">Publications</a></li>
+	    
+	    
+	    
+	    <li>&#183;</li>
+	    
+	    
+
+	    
+	    
+	    
+
+	    <li><a href="/dissemination/">Dissemination</a></li>
+	    
+	    
+	    
+	    <li>&#183;</li>
+	    
+	    
+
+	    
+	    
+	    
+
+	    <li><a href="/teaching/">Teaching</a></li>
+	    
+	    
+	    
+	    <li>&#183;</li>
+	    
+	    
+
+	    
+	    
+	    
+
+	    <li><a href="/contact/">Contact</a></li>
+	    
+	    
+	    
+	    <li>&#183;</li>
+	    
+	    
+
+	    
+	    
+	    
+
+	    <li class="active"><a href="/blog/">Blog</a></li>
+	    
+	    
+	</ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Disable Bouncer Playback Spam for Emacs Circe Notifications</h1>
+    <span>August 10, 2018</span>
+    <p>I recently changed to using <a href="https://github.com/jorgenschaefer/circe">circe</a> as my everyday IRC client.
+Despite the <a href="https://github.com/eqyiel/circe-notifications">circe-notifications</a> being featureful, the suggested way to reduce notification spam from your irc bouncer is a bit of a hack.
+As stated in the readme, simply delay the activation hook by <em>x</em> seconds and pray it is large enough for missing all notifcations during playback.</p>
+<center>
+<figure>
+    <img src="/ox-hugo/team_chat.png" width="70%"/> 
+</figure>
+
+</center>
+<p>From my experience it works reasonably well, however, when you work on a laptop (with <code>circe-lagmon-mode</code> for reconnection after suspend) the issue persist as you reconnect to your bouncer in the same emacs session.
+I am using ZNC as my bouncer, and it conviently prefixes all messages with a timestamp.
+Knowing this, I customized <code>circe-notifications-notify</code> to ignore messages with such a prefix.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp">(defun circe-notifications-notify (nick body channel)
+  (unless (string-match <span style="color:#e6db74">&#34;^\[[0-9]+:[0-9]+\]&#34;</span> body)
+      (alert
+       body
+       <span style="color:#e6db74">:severity</span> circe-notifications-alert-severity
+       <span style="color:#e6db74">:title</span> nick
+       <span style="color:#e6db74">:style</span> circe-notifications-alert-style)))
+</code></pre></div>
+</main>
+<footer>
+    <p>
+	©
+	<span>2019</span>
+	<span>Thomas Kobber Panum, theme is heavily inspired by <a href="https://ruben.verborgh.org" target="_blank" rel="noopener">Ruben Verborgh's website.</a></span>
+	<br>
+	Content of this website, text and images, is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" title="Creative Commons Attribution 4.0 International License"><abbr class="caps">CC</abbr> <abbr class="caps">BY</abbr> 4.0</a> except where otherwise noted.
+    </p>
+    <ul class="profiles">
+	
+	<li><a data-icon="" href="https://twitter.com/tpanum" target="_blank" rel="noopener">Twitter</a></li>
+	
+	
+	<li><a data-icon="" href="https://github.com/tpanum" target="_blank" rel="noopener">GitHub</a></li>
+	
+	
+	<li><a data-icon="" href="https://www.linkedin.com/in/tpanum" target="_blank" rel="noopener">LinkedIn</a></li>
+	
+    </ul>
+</footer>
+</div>
+    </body>
+</html>

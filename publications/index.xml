@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Thomas Kobber Panum</title>
+    <link>https://panum.dk/publications/</link>
+    <description>Recent content in Publications on Thomas Kobber Panum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://panum.dk/publications/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Towards Adversarial Phishing Detection</title>
+      <link>https://panum.dk/publications/towards_adv_phish/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0200</pubDate>
+      
+      <guid>https://panum.dk/publications/towards_adv_phish/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CAUSE: Learning Granger Causality from Event Sequences using Attribution Methods</title>
+      <link>https://panum.dk/publications/cause/</link>
+      <pubDate>Tue, 18 Feb 2020 00:00:00 +0200</pubDate>
+      
+      <guid>https://panum.dk/publications/cause/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kraaler: A User Perspective Web Crawler</title>
+      <link>https://panum.dk/publications/kraaler/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://panum.dk/publications/kraaler/</guid>
+      <description>This is Kraaler</description>
+    </item>
+    
+    <item>
+      <title>Haaukins: A Highly Accessible and Automated Virtualization Platform for Security Education</title>
+      <link>https://panum.dk/publications/haaukins/</link>
+      <pubDate>Tue, 15 Jan 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://panum.dk/publications/haaukins/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

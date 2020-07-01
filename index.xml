@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Thomas Kobber Panum</title>
+    <link>https://panum.dk/</link>
+    <description>Recent content in Home on Thomas Kobber Panum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://panum.dk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Towards Adversarial Phishing Detection</title>
+      <link>https://panum.dk/publications/towards_adv_phish/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0200</pubDate>
+      
+      <guid>https://panum.dk/publications/towards_adv_phish/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Afslørede CPR-numre: Forsikringsselskab stopper online salg efter Version2-artikler</title>
+      <link>https://panum.dk/dissemination/if_cpr_leak_follow_up_two/</link>
+      <pubDate>Wed, 13 May 2020 06:00:00 +0200</pubDate>
+      
+      <guid>https://panum.dk/dissemination/if_cpr_leak_follow_up_two/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efter afsløring af kritisk CPR-hul: Ministerium kræver svar fra IF Forsikring</title>
+      <link>https://panum.dk/dissemination/if_cpr_leak_follow_up/</link>
+      <pubDate>Thu, 30 Apr 2020 06:00:00 +0200</pubDate>
+      
+      <guid>https://panum.dk/dissemination/if_cpr_leak_follow_up/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kritisk CPR-hack: Forsikringsselskab lod alle og enhver snuse rundt i CPR-registret</title>
+      <link>https://panum.dk/dissemination/if_cpr_leak/</link>
+      <pubDate>Wed, 29 Apr 2020 06:00:00 +0200</pubDate>
+      
+      <guid>https://panum.dk/dissemination/if_cpr_leak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CAUSE: Learning Granger Causality from Event Sequences using Attribution Methods</title>
+      <link>https://panum.dk/publications/cause/</link>
+      <pubDate>Tue, 18 Feb 2020 00:00:00 +0200</pubDate>
+      
+      <guid>https://panum.dk/publications/cause/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kunstig intelligens lider også af menneskelige fejl</title>
+      <link>https://panum.dk/dissemination/kunstig_int_fejl/</link>
+      <pubDate>Thu, 18 Apr 2019 10:46:39 +0200</pubDate>
+      
+      <guid>https://panum.dk/dissemination/kunstig_int_fejl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Principles of Operating Systems and Concurrency</title>
+      <link>https://panum.dk/teaching/pss/</link>
+      <pubDate>Mon, 01 Apr 2019 15:18:34 +0200</pubDate>
+      
+      <guid>https://panum.dk/teaching/pss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kraaler: A User Perspective Web Crawler</title>
+      <link>https://panum.dk/publications/kraaler/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://panum.dk/publications/kraaler/</guid>
+      <description>This is Kraaler</description>
+    </item>
+    
+    <item>
+      <title>M.Sc. in Computer Science, 4th Semester</title>
+      <link>https://panum.dk/teaching/msc_comp_sci_19/</link>
+      <pubDate>Sat, 02 Feb 2019 23:12:41 +0200</pubDate>
+      
+      <guid>https://panum.dk/teaching/msc_comp_sci_19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>B.Sc. in Software Engineering, 4th Semester</title>
+      <link>https://panum.dk/teaching/bsc_sw_19/</link>
+      <pubDate>Fri, 01 Feb 2019 23:23:27 +0200</pubDate>
+      
+      <guid>https://panum.dk/teaching/bsc_sw_19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Haaukins: A Highly Accessible and Automated Virtualization Platform for Security Education</title>
+      <link>https://panum.dk/publications/haaukins/</link>
+      <pubDate>Tue, 15 Jan 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://panum.dk/publications/haaukins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NixOS: One Year In (I&#39;m still in love)</title>
+      <link>https://panum.dk/blog/nixos_one_year_in_im_still_in_love/</link>
+      <pubDate>Thu, 10 Jan 2019 12:00:00 +0200</pubDate>
+      
+      <guid>https://panum.dk/blog/nixos_one_year_in_im_still_in_love/</guid>
+      <description>As I have written in a previous post, I switched to NixOS from OS X. I have now been using it for 13 months, and wish to my general desktop configurations and experiences.
+Desktop Environment? Window Manager? Most Linux users are very avid to either discuss or highlight the Desktop Environment (DE) or their use of a minimalistic use of a Window Manager-only setup (VM). The discussions can, even as a senior engineer, become quite loopy and feel without ending at times.</description>
+    </item>
+    
+    <item>
+      <title>Secure Software in Practice</title>
+      <link>https://panum.dk/teaching/secure_software_practice/</link>
+      <pubDate>Tue, 01 Jan 2019 22:40:38 +0200</pubDate>
+      
+      <guid>https://panum.dk/teaching/secure_software_practice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security of Web Applications</title>
+      <link>https://panum.dk/teaching/security_web/</link>
+      <pubDate>Mon, 01 Oct 2018 23:03:36 +0200</pubDate>
+      
+      <guid>https://panum.dk/teaching/security_web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Disable Bouncer Playback Spam for Emacs Circe Notifications</title>
+      <link>https://panum.dk/blog/disable_bouncer_playback_spam_for_emacs_circe_notifications/</link>
+      <pubDate>Fri, 10 Aug 2018 12:00:00 +0200</pubDate>
+      
+      <guid>https://panum.dk/blog/disable_bouncer_playback_spam_for_emacs_circe_notifications/</guid>
+      <description>I recently changed to using circe as my everyday IRC client. Despite the circe-notifications being featureful, the suggested way to reduce notification spam from your irc bouncer is a bit of a hack. As stated in the readme, simply delay the activation hook by x seconds and pray it is large enough for missing all notifcations during playback.
+    From my experience it works reasonably well, however, when you work on a laptop (with circe-lagmon-mode for reconnection after suspend) the issue persist as you reconnect to your bouncer in the same emacs session.</description>
+    </item>
+    
+    <item>
+      <title>Secure Software</title>
+      <link>https://panum.dk/teaching/secure_software/</link>
+      <pubDate>Wed, 01 Aug 2018 23:06:04 +0200</pubDate>
+      
+      <guid>https://panum.dk/teaching/secure_software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NixOS: The distribution I got to love</title>
+      <link>https://panum.dk/blog/nixos_the_distribution_i_got_to_love/</link>
+      <pubDate>Thu, 14 Jun 2018 12:00:00 +0200</pubDate>
+      
+      <guid>https://panum.dk/blog/nixos_the_distribution_i_got_to_love/</guid>
+      <description>As I started my PhD studies I was faced with the choice of deciding my own hardware setup for the next 3 years, as long as I used the bureaucratic supply contract and kept a certain budget. I could easily see that getting a 15&amp;rdquo; MacBook Pro and an external monitor would blow the budget, so I quickly decided I wanted to adopt Linux full-time. At my previous company, Tryg, I used the new 15&amp;rdquo; MacBook Pro with Touch Bar.</description>
+    </item>
+    
+    <item>
+      <title>Sikkerhedshul på Skats hjemmeside: &#34;Det er kritisk&#34;</title>
+      <link>https://panum.dk/dissemination/skat_https_dr_2/</link>
+      <pubDate>Fri, 11 May 2018 13:18:04 +0200</pubDate>
+      
+      <guid>https://panum.dk/dissemination/skat_https_dr_2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTTPS: Skat lover krypteret forbindelse fra 1. juli</title>
+      <link>https://panum.dk/dissemination/skat_https_version2/</link>
+      <pubDate>Fri, 11 May 2018 12:50:39 +0200</pubDate>
+      
+      <guid>https://panum.dk/dissemination/skat_https_version2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skats hjemmeside er ikke en sikker forbindelse</title>
+      <link>https://panum.dk/dissemination/skat_https_dr/</link>
+      <pubDate>Fri, 11 May 2018 11:50:39 +0200</pubDate>
+      
+      <guid>https://panum.dk/dissemination/skat_https_dr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>B.Sc. in Computer Science, 4th Semester</title>
+      <link>https://panum.dk/teaching/bsc_comp_sci_18/</link>
+      <pubDate>Fri, 02 Feb 2018 23:19:46 +0200</pubDate>
+      
+      <guid>https://panum.dk/teaching/bsc_comp_sci_18/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Traffic Analysis and Network Security</title>
+      <link>https://panum.dk/teaching/traffic_analysis_network_sec/</link>
+      <pubDate>Fri, 01 Dec 2017 23:08:53 +0200</pubDate>
+      
+      <guid>https://panum.dk/teaching/traffic_analysis_network_sec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Robot That Got Me a Home In Copenhagen</title>
+      <link>https://panum.dk/blog/the_robot_that_got_me_a_home_in_copenhagen/</link>
+      <pubDate>Mon, 03 Apr 2017 20:00:00 +0200</pubDate>
+      
+      <guid>https://panum.dk/blog/the_robot_that_got_me_a_home_in_copenhagen/</guid>
+      <description>Everyone knows the struggle of getting an apartment in Copenhagen. It is a tough task, and a decent network is surely very valuable in that regard. However, as many others, I had almost no network in Copenhagen prior to moving here for my job at Ecsact. My journey began at Boligportalen, which is most used site for finding apartments for rent in Denmark. One of the most notable features about boligportalen, is the fact that they have an absurdly expensive subscription for accessing contact for the landlords.</description>
+    </item>
+    
+    <item>
+      <title>Hello Hugo!</title>
+      <link>https://panum.dk/blog/hello_hugo/</link>
+      <pubDate>Sun, 12 Jun 2016 13:44:52 +0200</pubDate>
+      
+      <guid>https://panum.dk/blog/hello_hugo/</guid>
+      <description>About every second year, I suddenly feel the urge to change the layout of my blog. This usually leads to not only a visual face-lift of the blog, but also an excuse to give into new technologies that have emerged within the last years.
+This year is no excuse, and I decided to dive into Hugo, which is a static website engine written in Go. I have spent the last year primary programming in Go and Python, and it&amp;rsquo;ve been an absolute joy.</description>
+    </item>
+    
+    <item>
+      <title>B.Sc. in Software Engineering, 4th Semester</title>
+      <link>https://panum.dk/teaching/bsc_sw_15/</link>
+      <pubDate>Mon, 02 Feb 2015 23:12:41 +0200</pubDate>
+      
+      <guid>https://panum.dk/teaching/bsc_sw_15/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>General Programming</title>
+      <link>https://panum.dk/teaching/general_programming/</link>
+      <pubDate>Fri, 01 Feb 2013 11:16:34 +0200</pubDate>
+      
+      <guid>https://panum.dk/teaching/general_programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>System Analysis &amp; Design</title>
+      <link>https://panum.dk/teaching/ooad/</link>
+      <pubDate>Sat, 01 Sep 2012 11:16:34 +0200</pubDate>
+      
+      <guid>https://panum.dk/teaching/ooad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>System Development</title>
+      <link>https://panum.dk/teaching/system_development/</link>
+      <pubDate>Tue, 01 Feb 2011 11:16:34 +0200</pubDate>
+      
+      <guid>https://panum.dk/teaching/system_development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning: The Unspoken Part</title>
+      <link>https://panum.dk/dissemination/ml_unspoken/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://panum.dk/dissemination/ml_unspoken/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
