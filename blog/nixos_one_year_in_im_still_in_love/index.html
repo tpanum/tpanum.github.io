@@ -1,221 +1,56 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <title>Thomas Kobber Panum</title>
-  
-  
-  <meta name="author" content="Thomas Kobber Panum">
-  
-  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=.5">
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-	<div class="headerbck"></div>
-	<div id="grid"><header>
-    <a href="https://panum.dk/">
-	<picture>
-	    
-	    <source  type="image/webp" srcset="/img/me_x1.webp 1x, /img/me_x2.webp 2x">
-	    
-	    <source  type="image/png" srcset="/img/me_x1.png 1x, /img/me_x2.png 2x">
-	    
-	    
-	    <img src="https://panum.dk/img/me_x1.png" alt="Thomas Kobber Panum">
-	    
-	</picture>
-	<h2>Thomas Kobber Panum</h2>
-    </a>
-    <nav>
-	<ul>
-	    
-	    
-	    
-	    
-
-	    
-	    
-	    
-
-	    <li><a href="/publications/">Publications</a></li>
-	    
-	    
-	    
-	    <li>&#183;</li>
-	    
-	    
-
-	    
-	    
-	    
-
-	    <li><a href="/dissemination/">Dissemination</a></li>
-	    
-	    
-	    
-	    <li>&#183;</li>
-	    
-	    
-
-	    
-	    
-	    
-
-	    <li><a href="/teaching/">Teaching</a></li>
-	    
-	    
-	    
-	    <li>&#183;</li>
-	    
-	    
-
-	    
-	    
-	    
-
-	    <li><a href="/contact/">Contact</a></li>
-	    
-	    
-	    
-	    <li>&#183;</li>
-	    
-	    
-
-	    
-	    
-	    
-
-	    <li class="active"><a href="/blog/">Blog</a></li>
-	    
-	    
-	</ul>
-    </nav>
-</header>
-
-<main>
-    <h1>NixOS: One Year In (I&#39;m still in love)</h1>
-    <span>January 10, 2019</span>
-    <p>As I have written in a <a href="/blog/nixos-the-distribution-i-got-to-love">previous post</a>, I switched to <a href="https://nixos.org/">NixOS</a> from <a href="https://en.wikipedia.org/wiki/MacOS">OS X</a>.
-I have now been using it for 13 months, and wish to my general desktop configurations and experiences.</p>
-<h2 id="desktop-environment-window-manager">Desktop Environment? Window Manager?</h2>
-<p>Most Linux users are very avid to either discuss or highlight the Desktop Environment (DE) or their use of a minimalistic use of a Window Manager-only setup (VM).
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Thomas Kobber Panum</title><meta name=author content="Thomas Kobber Panum"><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=.5"><link rel=stylesheet href=/css/style.css></head><body><div class=headerbck></div><div id=grid><header><a href=https://panum.dk/><picture>
+<source type=image/webp srcset="/img/me_x1.webp 1x, /img/me_x2.webp 2x"><source type=image/png srcset="/img/me_x1.png 1x, /img/me_x2.png 2x"><img src=https://panum.dk/img/me_x1.png alt="Thomas Kobber Panum"></picture><h2>Thomas Kobber Panum</h2></a><nav><ul><li><a href=/publications/>Publications</a></li><li>&#183;</li><li><a href=/dissemination/>Dissemination</a></li><li>&#183;</li><li><a href=/teaching/>Teaching</a></li><li>&#183;</li><li><a href=/contact/>Contact</a></li><li>&#183;</li><li class=active><a href=/blog/>Blog</a></li></ul></nav></header><main><h1>NixOS: One Year In (I'm still in love)</h1><span>January 10, 2019</span><p>As I have written in a <a href=/blog/nixos-the-distribution-i-got-to-love>previous post</a>, I switched to <a href=https://nixos.org/>NixOS</a> from <a href=https://en.wikipedia.org/wiki/MacOS>OS X</a>.
+I have now been using it for 13 months, and wish to my general desktop configurations and experiences.</p><h2 id=desktop-environment-window-manager>Desktop Environment? Window Manager?</h2><p>Most Linux users are very avid to either discuss or highlight the Desktop Environment (DE) or their use of a minimalistic use of a Window Manager-only setup (VM).
 The discussions can, even as a senior engineer, become quite loopy and feel without ending at times.
-In case you are curious about it, head over to <a href="https://www.reddit.com/r/unixporn/">/r/unixporn</a> (I&rsquo;m a shameless fan) or <a href="https://www.reddit.com/r/linuxmasterrace/">/r/linuxmasterrace</a> and get your dose of nerdy discussions.</p>
-<p>Except from the avoidance of endless discussions, I am sadly not that different, I have tried an unhealthy dose of DEs and WMs over the last year.
+In case you are curious about it, head over to <a href=https://www.reddit.com/r/unixporn/>/r/unixporn</a> (I&rsquo;m a shameless fan) or <a href=https://www.reddit.com/r/linuxmasterrace/>/r/linuxmasterrace</a> and get your dose of nerdy discussions.</p><p>Except from the avoidance of endless discussions, I am sadly not that different, I have tried an unhealthy dose of DEs and WMs over the last year.
 However, I haven&rsquo;t changed my setup dramatically within the last six months, which I hope is a sign of me converging to an ideal solution for me.
-Thankfully, <a href="https://nixos.org/">NixOS</a> makes in incredibly easy to try out different DEs and VMs, and it even cleans up after it self leaving you without dangling packages(!).
-I have been through a couple, firstly: <a href="https://www.kde.org/">KDE Plasma</a> and <a href="https://www.gnome.org/">GNOME3</a>.
+Thankfully, <a href=https://nixos.org/>NixOS</a> makes in incredibly easy to try out different DEs and VMs, and it even cleans up after it self leaving you without dangling packages(!).
+I have been through a couple, firstly: <a href=https://www.kde.org/>KDE Plasma</a> and <a href=https://www.gnome.org/>GNOME3</a>.
 After using Plasma briefly, the design of GNOME appealed more to me as it felt more intuitive to me personally.
-I stuck with GNOME for a couple of months, before <a href="https://wiki.gnome.org/Projects/dconf">getting annoyed by the fact that configurations are being stored on a database</a> while also getting persuaded by <a href="https://www.reddit.com/r/unixporn/">/r/unixporn</a> to try <a href="https://wiki.archlinux.org/index.php/bspwm">bspwm</a>.</p>
-<p>Booting with bspwm for the first time, to realize that <a href="https://wiki.archlinux.org/index.php/Sxhkd">sxhkd</a> (hotkey daemon) does not have any default configuration in case of no configuration file [/seriously, what can of default behaviour is that?/] leaving your keyboard completely paralyzed.
+I stuck with GNOME for a couple of months, before <a href=https://wiki.gnome.org/Projects/dconf>getting annoyed by the fact that configurations are being stored on a database</a> while also getting persuaded by <a href=https://www.reddit.com/r/unixporn/>/r/unixporn</a> to try <a href=https://wiki.archlinux.org/index.php/bspwm>bspwm</a>.</p><p>Booting with bspwm for the first time, to realize that <a href=https://wiki.archlinux.org/index.php/Sxhkd>sxhkd</a> (hotkey daemon) does not have any default configuration in case of no configuration file [/seriously, what can of default behaviour is that?/] leaving your keyboard completely paralyzed.
 Resolving that issue, let me to use bspwm for coupe of weeks until realizing time consuming process of implementing almost every single key binding from scratch.
-This let me to move on to the more user-friendly <a href="https://i3wm.org/">i3</a>, which has some sane defaults.</p>
-<p>Where are we today? As of writing, I have been using the <a href="https://wiki.archlinux.org/index.php/bspwm">bspwm</a> + <a href="https://wiki.archlinux.org/index.php/Sxhkd">sxhkd</a> cocktail for over six months.
+This let me to move on to the more user-friendly <a href=https://i3wm.org/>i3</a>, which has some sane defaults.</p><p>Where are we today? As of writing, I have been using the <a href=https://wiki.archlinux.org/index.php/bspwm>bspwm</a> + <a href=https://wiki.archlinux.org/index.php/Sxhkd>sxhkd</a> cocktail for over six months.
 <em>But didn&rsquo;t you move away from bspwm, due to its heavy requirement?</em> Yes, but that was also what I ended up missing.
-Realizing the unchangeable quirks of many other hotkey daemons, I realized how I missed sxhkd&rsquo;s ability to do <em>exactly like I wanted</em>.</p>
-<center>
-<figure><a href="/ox-hugo/my_desktop_2019.png">
-    <img src="/ox-hugo/my_desktop_2019_small.png" width="70%"/> </a>
-</figure>
-
-</center>
-<h2 id="cmd-plus-c-cmd-plus-v">Cmd+C, Cmd+V</h2>
-<p>The switch back to bspwm was heavily driven by one of the concepts I missed the most about running OS X, the elegant integration of the <code>cmd</code> key.
-Despite the typical anti-Apple movement of Linux users, some design choices in OS X are deeply elegant, with one of the most overlooked ones being the hotkey daemon.</p>
-<p>For those who have never used OS X, or in clear what I hint towards, let&rsquo;s start off with an example.
-Most developers spend a decent amount of time in the terminal, for which the <code>ctrl</code> key has a very distinct behaviour, namely the fact it is used to <a href="https://en.wikipedia.org/wiki/Signal%5F(IPC)">send signals</a>, e.g. canceling execution with <code>ctrl-c</code> (<code>SIGINT</code>).
-This often interveins with typical application-based shortcuts, e.g. =ctrl-c= (app: <code>copy</code>, term: <code>SIGINT</code>).</p>
-<p>This leads to the shortcut in most terminal applications for <code>copy</code> is either <code>ctrl-alt-c</code> or <code>ctrl-shift-c</code>.
+Realizing the unchangeable quirks of many other hotkey daemons, I realized how I missed sxhkd&rsquo;s ability to do <em>exactly like I wanted</em>.</p><center><figure><a href=/ox-hugo/my_desktop_2019.png><img src=/ox-hugo/my_desktop_2019_small.png width=70%></a></figure></center><h2 id=cmd-plus-c-cmd-plus-v>Cmd+C, Cmd+V</h2><p>The switch back to bspwm was heavily driven by one of the concepts I missed the most about running OS X, the elegant integration of the <code>cmd</code> key.
+Despite the typical anti-Apple movement of Linux users, some design choices in OS X are deeply elegant, with one of the most overlooked ones being the hotkey daemon.</p><p>For those who have never used OS X, or in clear what I hint towards, let&rsquo;s start off with an example.
+Most developers spend a decent amount of time in the terminal, for which the <code>ctrl</code> key has a very distinct behaviour, namely the fact it is used to <a href=https://en.wikipedia.org/wiki/Signal%5F(IPC)>send signals</a>, e.g. canceling execution with <code>ctrl-c</code> (<code>SIGINT</code>).
+This often interveins with typical application-based shortcuts, e.g. =ctrl-c= (app: <code>copy</code>, term: <code>SIGINT</code>).</p><p>This leads to the shortcut in most terminal applications for <code>copy</code> is either <code>ctrl-alt-c</code> or <code>ctrl-shift-c</code>.
 However, on OS X, it is a much more cohesive experience as typical application shortcuts are performed with <code>cmd</code>, e.g. =cmd-c= is <code>copy</code>.
 This simply elegant design, and well thought out.
-For many months I tried to replicate this behaviour to Linux, however, it is slightly non-trivial as most shortcuts are directly baked into the applications.</p>
-<p>However, sxhkd in combination with a bit of clever scripting actually got me some places.
-I have bound my <code>super-c</code> to the following script (with a replica for <code>paste</code> on <code>super-v</code>).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">CURRENT_WINDOW<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>xprop -id <span style="color:#66d9ef">$(</span>xdotool getwindowfocus<span style="color:#66d9ef">)</span> WM_CLASS | awk <span style="color:#e6db74">&#39;{ print $3 }&#39;</span> | cut -d <span style="color:#e6db74">&#39;&#34;&#39;</span> -f2<span style="color:#66d9ef">)</span>
-<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$CURRENT_WINDOW<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Alacritty&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
-    xdotool key --delay <span style="color:#ae81ff">0</span> --clearmodifiers ctrl+shift+c
-<span style="color:#66d9ef">else</span>
-    xdotool key --delay <span style="color:#ae81ff">0</span> --clearmodifiers ctrl+c
-<span style="color:#66d9ef">fi</span>
-</code></pre></div><p>Not as cohesive as the OS X experience, but it works like I want, and allow me to use (<code>super-c</code>, <code>super-v</code>) to (<code>copy</code>,=paste=) in any application.</p>
-<h2 id="file-manager-fzf">File Manager: fzf</h2>
-<p>Another small modification that I use a lot for my daily tasks, is a customized <a href="https://github.com/junegunn/fzf">fzf</a> script.
+For many months I tried to replicate this behaviour to Linux, however, it is slightly non-trivial as most shortcuts are directly baked into the applications.</p><p>However, sxhkd in combination with a bit of clever scripting actually got me some places.
+I have bound my <code>super-c</code> to the following script (with a replica for <code>paste</code> on <code>super-v</code>).</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>CURRENT_WINDOW<span style=color:#f92672>=</span><span style=color:#66d9ef>$(</span>xprop -id <span style=color:#66d9ef>$(</span>xdotool getwindowfocus<span style=color:#66d9ef>)</span> WM_CLASS | awk <span style=color:#e6db74>&#39;{ print $3 }&#39;</span> | cut -d <span style=color:#e6db74>&#39;&#34;&#39;</span> -f2<span style=color:#66d9ef>)</span>
+<span style=color:#66d9ef>if</span> <span style=color:#f92672>[</span> <span style=color:#e6db74>&#34;</span>$CURRENT_WINDOW<span style=color:#e6db74>&#34;</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;Alacritty&#34;</span> <span style=color:#f92672>]</span>; <span style=color:#66d9ef>then</span>
+    xdotool key --delay <span style=color:#ae81ff>0</span> --clearmodifiers ctrl+shift+c
+<span style=color:#66d9ef>else</span>
+    xdotool key --delay <span style=color:#ae81ff>0</span> --clearmodifiers ctrl+c
+<span style=color:#66d9ef>fi</span>
+</code></pre></div><p>Not as cohesive as the OS X experience, but it works like I want, and allow me to use (<code>super-c</code>, <code>super-v</code>) to (<code>copy</code>,=paste=) in any application.</p><h2 id=file-manager-fzf>File Manager: fzf</h2><p>Another small modification that I use a lot for my daily tasks, is a customized <a href=https://github.com/junegunn/fzf>fzf</a> script.
 That, in combination with <code>cp</code> and <code>mv</code> (and getting used naming files in a unix friendly way) made my need for a file manager completely obsolete.
-In short, it is a script that activates <code>fzf</code> on my home directory, for which it pipes the result to <a href="https://xyne.archlinux.ca/projects/mimeo/">mimeo</a>.
+In short, it is a script that activates <code>fzf</code> on my home directory, for which it pipes the result to <a href=https://xyne.archlinux.ca/projects/mimeo/>mimeo</a>.
 The script is very efficient (thanks to <code>fzf</code>) at searching, even in deeply nested directories, and is being activated with <code>super+d</code>.
-You can see a preview of the whole process below, and find the script.</p>
-<center>
-<figure><a href="/ox-hugo/fzf-open.gif">
-    <img src="/ox-hugo/fzf-open.gif" width="70%"/> </a>
-</figure>
+You can see a preview of the whole process below, and find the script.</p><center><figure><a href=/ox-hugo/fzf-open.gif><img src=/ox-hugo/fzf-open.gif width=70%></a></figure></center><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=color:#75715e>#!/run/current-system/sw/bin/bash
+</span><span style=color:#75715e></span>IFS<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;:&#39;</span>
 
-</center>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/run/current-system/sw/bin/bash
-</span><span style="color:#75715e"></span>IFS<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;:&#39;</span>
-
-get_selection<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+get_selection<span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
     find ~ -type d ! -readable -prune -o -print | fzf --reverse --color pointer:3,info:14,bg+:-1
-<span style="color:#f92672">}</span>
+<span style=color:#f92672>}</span>
 
-<span style="color:#66d9ef">if</span> selection<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span> get_selection <span style="color:#66d9ef">)</span>; <span style="color:#66d9ef">then</span>
-    nohup mimeo <span style="color:#e6db74">&#34;</span>$selection<span style="color:#e6db74">&#34;</span> &gt;/dev/null 2&gt;&amp;<span style="color:#ae81ff">1</span> &amp;
+<span style=color:#66d9ef>if</span> selection<span style=color:#f92672>=</span><span style=color:#66d9ef>$(</span> get_selection <span style=color:#66d9ef>)</span>; <span style=color:#66d9ef>then</span>
+    nohup mimeo <span style=color:#e6db74>&#34;</span>$selection<span style=color:#e6db74>&#34;</span> &gt;/dev/null 2&gt;&amp;<span style=color:#ae81ff>1</span> &amp;
     sleep 0.05
-<span style="color:#66d9ef">fi</span>
+<span style=color:#66d9ef>fi</span>
 
-echo -ne <span style="color:#e6db74">&#39; &#39;</span>
-exit <span style="color:#ae81ff">0</span>
-</code></pre></div><p>Beware! the script contains a bit of color configuration to match my personal <a href="https://github.com/arcticicestudio/nord">nord theme</a>.</p>
-<h2 id="autostart">Autostart</h2>
-<p>OS X had the ability to reopen application upon boot, that was open during last shutdown.
+echo -ne <span style=color:#e6db74>&#39; &#39;</span>
+exit <span style=color:#ae81ff>0</span>
+</code></pre></div><p>Beware! the script contains a bit of color configuration to match my personal <a href=https://github.com/arcticicestudio/nord>nord theme</a>.</p><h2 id=autostart>Autostart</h2><p>OS X had the ability to reopen application upon boot, that was open during last shutdown.
 Just like your favorite web browser, the feature was very convenient.
 However, it often (just like your browser) lead to a lot of dangling and unused resources that just <em>sat there</em> after every reboot.
-Reproducing the same behaviour on Linux was non-trivial, so looked other ways.</p>
-<p>I started using autostart for spinning up specific application on every boot, and now I even prefer that, rather than having your left overs served to you from the last boot.
-Currently, I have Firefox and Emacs in autostart and it seems to fit perfectly for my needs.</p>
-<h2 id="applications">Applications</h2>
-<p>This list is a small sample of some of the applications I use, and have used (R.I.P. ✝).</p>
-<ul>
-<li>bspwm, sxhkd [✝ GNOME3, ✝ i3] &mdash; <em>window manager and hotkey daemon</em></li>
-<li>Plank [✝ polybar] &mdash; <em>simple dock with icons</em></li>
-<li>Thunderbird [✝ claws, ✝ notmuch] &mdash; <em>mail client with great html support</em></li>
-<li>tint2 [✝ polybar] &mdash; <em>tiny bar with basic system information and systray</em></li>
-<li>rofi &mdash; <em>application launcher</em></li>
-<li>emacs &mdash; <em>my beloved text editor</em></li>
-<li>Firefox &mdash; <em>my current browser of choice</em></li>
-<li>Alacritty [✝ urxvt, ✝ termite] &mdash; <em>decent modern terminal (finally with scrollback)</em></li>
-<li>dunst &mdash; <em>notifications daemon</em></li>
-</ul>
-<h2 id="all-in-all">All in all</h2>
-<p>Running NixOS as a daily driver has been highly enjoyable, <a href="/blog/nixos-the-distribution-i-got-to-love">even during times of a hard disk migration</a>.
-In fact, I ended up loving it so much that I changed my personal <a href="https://en.wikipedia.org/wiki/Virtual%5Fprivate%5Fserver">VPS</a> to run NixOS.
+Reproducing the same behaviour on Linux was non-trivial, so looked other ways.</p><p>I started using autostart for spinning up specific application on every boot, and now I even prefer that, rather than having your left overs served to you from the last boot.
+Currently, I have Firefox and Emacs in autostart and it seems to fit perfectly for my needs.</p><h2 id=applications>Applications</h2><p>This list is a small sample of some of the applications I use, and have used (R.I.P. ✝).</p><ul><li>bspwm, sxhkd [✝ GNOME3, ✝ i3] &mdash; <em>window manager and hotkey daemon</em></li><li>Plank [✝ polybar] &mdash; <em>simple dock with icons</em></li><li>Thunderbird [✝ claws, ✝ notmuch] &mdash; <em>mail client with great html support</em></li><li>tint2 [✝ polybar] &mdash; <em>tiny bar with basic system information and systray</em></li><li>rofi &mdash; <em>application launcher</em></li><li>emacs &mdash; <em>my beloved text editor</em></li><li>Firefox &mdash; <em>my current browser of choice</em></li><li>Alacritty [✝ urxvt, ✝ termite] &mdash; <em>decent modern terminal (finally with scrollback)</em></li><li>dunst &mdash; <em>notifications daemon</em></li></ul><h2 id=all-in-all>All in all</h2><p>Running NixOS as a daily driver has been highly enjoyable, <a href=/blog/nixos-the-distribution-i-got-to-love>even during times of a hard disk migration</a>.
+In fact, I ended up loving it so much that I changed my personal <a href=https://en.wikipedia.org/wiki/Virtual%5Fprivate%5Fserver>VPS</a> to run NixOS.
 NixOS seems like taste of what the future of operating systems will bring, true reproducibility <strong>will</strong> be a requirement of the future.
-However, you can try it out today, <em>free of charge</em>.</p>
-<p>My only advice to you, dear reader, is to head over to the <a href="https://nixos.org/nixos/manual/index.html#ch-installation">NixOS manual</a> to try it out today.</p>
-<h2 id="planned-improvements--2019">Planned Improvements (2019)</h2>
-<p>I wish to start using <a href="https://orgmode.org/manual/Agenda-commands.html">org-agenda</a> (extensible todo system for Emacs), properly.
+However, you can try it out today, <em>free of charge</em>.</p><p>My only advice to you, dear reader, is to head over to the <a href=https://nixos.org/nixos/manual/index.html#ch-installation>NixOS manual</a> to try it out today.</p><h2 id=planned-improvements--2019>Planned Improvements (2019)</h2><p>I wish to start using <a href=https://orgmode.org/manual/Agenda-commands.html>org-agenda</a> (extensible todo system for Emacs), properly.
 Properly, refers to the fact that I have tried it once, but never got <em>hooked</em> on it.
-My experience with <code>org-mode</code> was the same, not entirely hooked on the first attempt, but now I cannot live without it.</p>
-
-</main>
-<footer>
-    <p>
-	©
-	<span>2019</span>
-	<span>Thomas Kobber Panum, theme is heavily inspired by <a href="https://ruben.verborgh.org" target="_blank" rel="noopener">Ruben Verborgh's website.</a></span>
-	<br>
-	Content of this website, text and images, is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" title="Creative Commons Attribution 4.0 International License"><abbr class="caps">CC</abbr> <abbr class="caps">BY</abbr> 4.0</a> except where otherwise noted.
-    </p>
-    <ul class="profiles">
-	
-	<li><a data-icon="" href="https://twitter.com/tpanum" target="_blank" rel="noopener">Twitter</a></li>
-	
-	
-	<li><a data-icon="" href="https://github.com/tpanum" target="_blank" rel="noopener">GitHub</a></li>
-	
-	
-	<li><a data-icon="" href="https://www.linkedin.com/in/tpanum" target="_blank" rel="noopener">LinkedIn</a></li>
-	
-    </ul>
-</footer>
-</div>
-    </body>
-</html>
+My experience with <code>org-mode</code> was the same, not entirely hooked on the first attempt, but now I cannot live without it.</p></main><footer><p>©
+<span>2019</span>
+<span>Thomas Kobber Panum, theme is heavily inspired by <a href=https://ruben.verborgh.org target=_blank rel=noopener>Ruben Verborgh's website.</a></span><br>Content of this website, text and images, is licensed under <a href=https://creativecommons.org/licenses/by/4.0/ target=_blank title="Creative Commons Attribution 4.0 International License"><abbr class=caps>CC</abbr> <abbr class=caps>BY</abbr> 4.0</a> except where otherwise noted.</p><ul class=profiles><li><a data-icon= href=https://twitter.com/tpanum target=_blank rel=noopener>Twitter</a></li><li><a data-icon= href=https://github.com/tpanum target=_blank rel=noopener>GitHub</a></li><li><a data-icon= href=https://www.linkedin.com/in/tpanum target=_blank rel=noopener>LinkedIn</a></li></ul></footer></div></body></html>
