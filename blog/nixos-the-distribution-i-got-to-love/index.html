@@ -1,0 +1,83 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Thomas Kobber Panum</title>
+<meta name=author content="Thomas Kobber Panum"><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=.5"><link rel=stylesheet href=/css/style.bd1f32953ba7c8f32f5f0ae45d8e416b9b45fcf0fec0398f97319e142d486559.css integrity="sha256-vR8ylTunyPMvXwrkXY5Ba5tF/PD+wDmPlzGeFC1IZVk="></head><body><div class=headerbck></div><div id=grid><header><a href=https://panum.dk/><picture><source type=image/webp srcset="/img/me_x1.webp 1x, /img/me_x2.webp 2x"><source type=image/png srcset="/img/me_x1.png 1x, /img/me_x2.png 2x"><img src=https://panum.dk/img/me_x1.png alt="Thomas Kobber Panum"></picture><h2>Thomas Kobber Panum</h2></a><nav><ul><li class=active><a href=/blog/>Blog</a></li><li>&#183;</li><li><a href=/press/>Press</a></li><li>&#183;</li><li><a href=/academia/>Academia</a></li><li>&#183;</li><li><a href=/teaching/>Teaching</a></li><li>&#183;</li><li><a href=/contact/>Contact</a></li></ul></nav></header><main class=blog><h1 class=title>NixOS: The distribution I got to love</h1><span class=date>June 14, 2018 &mdash; Thomas Kobber Panum</span><p>As I started my PhD studies I was faced with the choice of deciding my own hardware setup for the next 3 years, as long as I used the bureaucratic supply contract and kept a certain budget.
+I could easily see that getting a 15" MacBook Pro and an external monitor would blow the budget, so I quickly decided I wanted to adopt Linux full-time.
+At my previous company, <a href=https://tryg.dk>Tryg</a>, I used the new 15" MacBook Pro with Touch Bar.
+Needless to say, the touch bar is god awful and is simply a tool to steal space from relevant components (e.g. media keys).
+With that frustration in mind, I decided to picking up the <strong>Lenovo ThinkPad T470s</strong>.</p><div style=text-align:center><picture><source srcset=/blog/nixos-the-distribution-i-got-to-love/images/t470s_hu503102f3102b91752f14ff0e5eb76656_821466_1400x0_resize_q75_box.jpg type=image/webp media="(min-resolution: 192dpi)"><source srcset=/blog/nixos-the-distribution-i-got-to-love/images/t470s_hu503102f3102b91752f14ff0e5eb76656_821466_350x0_resize_q75_box.jpg type=image/webp media="(max-resolution: 96dpi)"><source srcset=/blog/nixos-the-distribution-i-got-to-love/images/t470s_hu503102f3102b91752f14ff0e5eb76656_821466_1400x0_resize_q75_box.jpg type=image/jpeg media="(min-resolution: 192dpi)"><source srcset=/blog/nixos-the-distribution-i-got-to-love/images/t470s_hu503102f3102b91752f14ff0e5eb76656_821466_350x0_resize_q75_box.jpg type=image/jpeg media="(max-resolution: 96dpi)"><img srcset="/blog/nixos-the-distribution-i-got-to-love/images/t470s_hu503102f3102b91752f14ff0e5eb76656_821466_350x0_resize_q75_box.jpg 1x, /blog/nixos-the-distribution-i-got-to-love/images/t470s_hu503102f3102b91752f14ff0e5eb76656_821466_700x0_resize_q75_box.jpg 2x, /blog/nixos-the-distribution-i-got-to-love/images/t470s_hu503102f3102b91752f14ff0e5eb76656_821466_1400x0_resize_q75_box.jpg 3x" src=/blog/nixos-the-distribution-i-got-to-love/images/t470s_hu503102f3102b91752f14ff0e5eb76656_821466_700x0_resize_q75_box.jpg width=700 height=525 alt="Lenovo T470s" loading=lazy></picture></div><h2 id=choice-of-distribution>Choice of Distribution</h2><p>It was my first time trying to run Linux full-time, as I previous had used OSX for more than 7 years.
+During my time in high school one of my classmates was actually the owner and administrator of <a href=http://www.archlinux.dk/>the danish Arch Linux community</a>.
+Back then I definitely did not have the skills required to pursue any hand-tailored Linux like <a href=https://wiki.archlinux.org/index.php/Arch_Linux>Arch Linux</a>, but luckily after receiving my computer science degree, the thought does not seem that frightening to me anymore.
+Through my education, I started to appreciate minimalism and the ability to pick-and-choose <strong>only</strong> the tools you <em>actually</em> need.
+However, I was aware of some the pitfalls that comes with the rolling release nature of Arch, and the thought of my computer suddenly malfunctioning one day, and the entire time spend configuring it being lost, was scary.</p><p>I then started my search for minimal alternatives, especially ones that could reduce the configuration overhead that typically comes with Arch Linux, Gentoo, and alike.
+This was when I discovered <a href=https://nixos.org/>NixOS</a>, and when first read the description I was unsure whether the feature promises was too good to be true.
+It claimed that it was &ldquo;Declarative&rdquo; (e.g. less time configuring) and &ldquo;Reliable&rdquo; (atomic upgrades and rollbacks) was it truly too good to be true? I had to dig in to find out.</p><h2 id=nixos>NixOS</h2><div style=text-align:center><picture><source srcset=/blog/nixos-the-distribution-i-got-to-love/images/nixos_logo_hu63d4a9965e0697b96ee0c62fa71186be_24308_360x0_resize_box_3.png type=image/webp media="(min-resolution: 192dpi)"><source srcset=/blog/nixos-the-distribution-i-got-to-love/images/nixos_logo_hu63d4a9965e0697b96ee0c62fa71186be_24308_90x0_resize_box_3.png type=image/webp media="(max-resolution: 96dpi)"><source srcset=/blog/nixos-the-distribution-i-got-to-love/images/nixos_logo_hu63d4a9965e0697b96ee0c62fa71186be_24308_360x0_resize_box_3.png type=image/jpeg media="(min-resolution: 192dpi)"><source srcset=/blog/nixos-the-distribution-i-got-to-love/images/nixos_logo_hu63d4a9965e0697b96ee0c62fa71186be_24308_90x0_resize_box_3.png type=image/jpeg media="(max-resolution: 96dpi)"><img srcset="/blog/nixos-the-distribution-i-got-to-love/images/nixos_logo_hu63d4a9965e0697b96ee0c62fa71186be_24308_90x0_resize_box_3.png 1x, /blog/nixos-the-distribution-i-got-to-love/images/nixos_logo_hu63d4a9965e0697b96ee0c62fa71186be_24308_180x0_resize_box_3.png 2x, /blog/nixos-the-distribution-i-got-to-love/images/nixos_logo_hu63d4a9965e0697b96ee0c62fa71186be_24308_360x0_resize_box_3.png 3x" src=/blog/nixos-the-distribution-i-got-to-love/images/nixos_logo_hu63d4a9965e0697b96ee0c62fa71186be_24308_180x0_resize_box_3.png width=180 height=155 alt="NixOS Logo" loading=lazy></picture></div><p>NixOS is a very different Linux distribution than <em>the classical ones</em> (Ubuntu, Debian, Arch, etc.)
+It relies heavy on the <a href=https://nixos.org/nix/>Nix package manager</a>, which is available as a standalone binary for Unix distributions.
+However, in NixOS, its use has been taken the next level as it functions as a center piece for package management <strong>and</strong> configuration management.
+Essentially, Nix is declarative programming language and NixOS evolves around having a single <code>configuration.nix</code>-file of this language, that is responsible for <em>declaring</em> your environment in the Nix programming language.
+Like other programming languages, you can reference other language files and thereby let your <code>configuration.nix</code> reference other Nix-files and decompose your system configuration.
+When you run the <code>nixos-generate-config</code> during install, you will be receiving a <code>configuration.nix</code> file that looks like the following:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span># Edit this configuration file to define what should be installed on
+</span></span><span style=display:flex><span># your system.  Help is available in the configuration.nix(5) man page
+</span></span><span style=display:flex><span># and in the NixOS manual (accessible by running ‘nixos-help’).
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>{ config, pkgs, ... }:
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>  imports =
+</span></span><span style=display:flex><span>    [ # Include the results of the hardware scan.
+</span></span><span style=display:flex><span>      ./hardware-configuration.nix
+</span></span><span style=display:flex><span>    ];
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  # Use the systemd-boot EFI boot loader.
+</span></span><span style=display:flex><span>  boot.loader.systemd-boot.enable = true;
+</span></span><span style=display:flex><span>  boot.loader.efi.canTouchEfiVariables = true;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  # networking.hostName = &#34;nixos&#34;; # Define your hostname.
+</span></span><span style=display:flex><span>  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  # ...
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  # Set your time zone.
+</span></span><span style=display:flex><span>  # time.timeZone = &#34;Europe/Amsterdam&#34;;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  # List packages installed in system profile. To search, run:
+</span></span><span style=display:flex><span>  # $ nix search wget
+</span></span><span style=display:flex><span>  # environment.systemPackages = with pkgs; [
+</span></span><span style=display:flex><span>  #   wget vim
+</span></span><span style=display:flex><span>  # ];
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  # ...
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  # Open ports in the firewall.
+</span></span><span style=display:flex><span>  # networking.firewall.allowedTCPPorts = [ ... ];
+</span></span><span style=display:flex><span>  # networking.firewall.allowedUDPPorts = [ ... ];
+</span></span><span style=display:flex><span>  # Or disable the firewall altogether.
+</span></span><span style=display:flex><span>  # networking.firewall.enable = false;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  # ...
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  # Enable the KDE Desktop Environment.
+</span></span><span style=display:flex><span>  # services.xserver.displayManager.sddm.enable = true;
+</span></span><span style=display:flex><span>  # services.xserver.desktopManager.plasma5.enable = true;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  # Define a user account. Don&#39;t forget to set a password with ‘passwd’.
+</span></span><span style=display:flex><span>  # users.extraUsers.guest = {
+</span></span><span style=display:flex><span>  #   isNormalUser = true;
+</span></span><span style=display:flex><span>  #   uid = 1000;
+</span></span><span style=display:flex><span>  # };
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  # This value determines the NixOS release with which your system is to be
+</span></span><span style=display:flex><span>  # compatible, in order to avoid breaking some software such as database
+</span></span><span style=display:flex><span>  # servers. You should change this only after NixOS release notes say you
+</span></span><span style=display:flex><span>  # should.
+</span></span><span style=display:flex><span>  system.stateVersion = &#34;18.03&#34;; # Did you read the comment?
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>I left out some of the commented options to shrink the size for visibility, but I think this default <code>configuration.nix</code>-file give a sense of how and the extend the Nix language can configure your system.
+For a complete list of options visit the <a href=https://nixos.org/nixos/options.html#>Nix Option site</a>.
+When you modify the your <code>configuration.nix</code>-file and want the changes to take effect, you use the <code>nixos-rebuild {switch, boot}</code> command in order to migrate to a new system configuration directly or on next boot respectively.
+I highly encourage you to read the <a href=https://nixos.org/nixos/manual/>well-written manual</a>, and you can find my personal <code>configuration.nix</code> in <a href=https://github.com/tpanum/dotfiles/tree/master/nix>my dotfiles repository</a>.
+It is current about 600 lines, and I run a very minimal environment with just a window manager and a bit of <a href=https://www.reddit.com/r/unixporn/>ricing</a>.
+So currently I have a setup which sits at about ~1 GB RAM usage on boot with <a href=https://www.gnu.org/software/emacs/>Emacs</a>, <a href=https://i3wm.org/>i3wm</a>, and Firefox Quantum.</p><h2 id=aftermath>Aftermath</h2><p>Right now I am typing this article on my T470s running NixOS, and I am about six months into the adventure.
+Was it everything I hoped for? Definitely! During my adventure I had to upgrade my single drive laptop to a 1 TB drive, which lead me to try the reproducibility of NixOS and it went smoothly.
+It has been a bit of wild ride and the rolling updates managed to break my system twice, however, the rollback functionality made sure that no unrevertable harm was made.
+Overall, I can highly recommend trying out NixOS and often find my self wondering why it has not gotten more traction since its first release in 2003.</p></main><footer><p>©
+<span>2024</span>
+<span>Thomas Kobber Panum, theme is heavily inspired by <a href=https://ruben.verborgh.org target=_blank rel=noopener>Ruben Verborgh's website.</a></span><br>Content of this website, text and images, is licensed under <a href=https://creativecommons.org/licenses/by/4.0/ target=_blank title="Creative Commons Attribution 4.0 International License"><abbr class=caps>CC</abbr> <abbr class=caps>BY</abbr> 4.0</a> except where otherwise noted.</p><ul class=profiles><li><a data-icon= href=https://twitter.com/tpanum target=_blank rel=noopener>Twitter</a></li><li><a data-icon= href=https://github.com/tpanum target=_blank rel=noopener>GitHub</a></li><li><a data-icon= href=https://www.linkedin.com/in/tpanum target=_blank rel=noopener>LinkedIn</a></li></ul></footer></div></body></html>
